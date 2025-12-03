@@ -1,0 +1,1036 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+            "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+  <HTML DIR='LTR'>
+  <HEAD>
+   <TITLE>Consulta - Caja de Seguro Social - Planilla</TITLE>
+   <META http-equiv="Content-Type" content="text/html; charset=iso-8859-15" />
+   <META http-equiv="Expires" content="Fri, Jan 01 1900 00:00:00 GMT"/>
+   <META http-equiv="Last-Modified" content="Wed, 03 Dec 2025 03:37:08 GMT"/>
+   <META http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate"/>
+   <META http-equiv="Cache-Control" content="post-check=0, pre-check=0"/>
+   <META http-equiv="Pragma" content="no-cache"/>
+   <link rel="shortcut icon" href="../_lib/img/scriptcase__NM__ico__NM__favicon.ico">
+   <form name="form_ajax_redir_1" method="post" style="display: none">
+    <input type="hidden" name="nmgp_parms">
+    <input type="hidden" name="nmgp_outra_jan">
+    <input type="hidden" name="script_case_session" value="rmhb398oesmgnkt760qm0vmk7e">
+   </form>
+   <form name="form_ajax_redir_2" method="post" style="display: none"> 
+    <input type="hidden" name="nmgp_parms">
+    <input type="hidden" name="nmgp_url_saida">
+    <input type="hidden" name="script_case_init">
+    <input type="hidden" name="script_case_session" value="rmhb398oesmgnkt760qm0vmk7e">
+   </form>
+   <script type="text/javascript" src="grid_defensoria_jquery.js"></script>
+   <script type="text/javascript" src="grid_defensoria_ajax.js"></script>
+   <script type="text/javascript">
+     var sc_ajaxBg = '#6e6e6e';
+     var sc_ajaxBordC = '';
+     var sc_ajaxBordS = 'none';
+     var sc_ajaxBordW = '';
+   </script>
+   <script type="text/javascript" src="/planilla/_lib/prod/third/jquery/js/jquery.js"></script>
+   <script type="text/javascript">
+      if (!window.Promise)
+      {
+          var head = document.getElementsByTagName('head')[0];
+          var js = document.createElement("script");
+          js.src = "../_lib/lib/js/bluebird.min.js";
+          head.appendChild(js);
+      }
+   </script>
+   <script type="text/javascript" src="/planilla/_lib/prod/third/jquery/js/jquery-ui.js"></script>
+   <link rel="stylesheet" href="/planilla/_lib/prod/third/jquery/css/smoothness/jquery-ui.css" type="text/css" media="screen" />
+   <script type="text/javascript" src="/planilla/_lib/prod/third/jquery_plugin/touch_punch/jquery.ui.touch-punch.min.js"></script>
+   <script type="text/javascript" src="/planilla/_lib/prod/third/jquery_plugin/malsup-blockui/jquery.blockUI.js"></script>
+        <script type="text/javascript">
+          var sc_pathToTB = '/planilla/_lib/prod/third/jquery_plugin/thickbox/';
+          var sc_tbLangClose = "";
+          var sc_tbLangEsc = "";
+        </script>
+   <script type="text/javascript" src="/planilla/_lib/prod/third/jquery_plugin/thickbox/thickbox-compressed.js"></script>
+   <script type="text/javascript" src="../_lib/lib/js/scInput.js"></script>
+   <script type="text/javascript" src="../_lib/lib/js/jquery.scInput.js"></script>
+   <script type="text/javascript" src="../_lib/lib/js/jquery.scInput2.js"></script>
+   <script type="text/javascript" src="../_lib/lib/js/bluebird.min.js"></script>
+   <link rel="stylesheet" href="/planilla/_lib/prod/third/jquery_plugin/thickbox/thickbox.css" type="text/css" media="screen" />
+   <link rel="stylesheet" type="text/css" href="../_lib/buttons/scriptcase9_Rhino/scriptcase9_Rhino.css" /> 
+   <link rel="stylesheet" type="text/css" href="../_lib/css/Sc9_Rhino/Sc9_Rhino_form.css" /> 
+   <link rel="stylesheet" type="text/css" href="../_lib/css/Sc9_Rhino/Sc9_Rhino_formLTR.css" /> 
+   <link rel="stylesheet" type="text/css" href="../_lib/css/Sc9_Rhino/Sc9_Rhino_appdiv.css" /> 
+   <link rel="stylesheet" type="text/css" href="../_lib/css/Sc9_Rhino/Sc9_Rhino_appdivLTR.css" /> 
+   <style type="text/css"> 
+     .scGridLabelFont a img[src$='scriptcase__NM__btn__NM__scriptcase9_Rhino__NM__nm_scriptcase9_Rhino_sort_desc.png'], 
+     .scGridLabelFont a img[src$='scriptcase__NM__btn__NM__scriptcase9_Rhino__NM__nm_scriptcase9_Rhino_sort_asc.png'], 
+     .scGridLabelFont a img[src$='scriptcase__NM__nm_scriptcase9_Rhino_charts.png'], 
+     .scGridLabelFont a img[src$='scriptcase__NM__nm_scriptcase9_Rhino_set_charts.png']{opacity:1!important;} 
+     .scGridLabelFont a img{opacity:0;transition:all .2s;} 
+     .scGridLabelFont:HOVER a img{opacity:1;transition:all .2s;} 
+   </style> 
+   <style type="text/css">
+     #quicksearchph_top {
+       position: relative;
+     }
+     #quicksearchph_top img {
+       position: absolute;
+       top: 0;
+       right: 0;
+     }
+   </style>
+   <script type="text/javascript"> 
+   function sc_session_redir(url_redir)
+   {
+       if (window.parent && window.parent.document != window.document && typeof window.parent.sc_session_redir === 'function')
+       {
+           window.parent.sc_session_redir(url_redir);
+       }
+       else
+       {
+           if (window.opener && typeof window.opener.sc_session_redir === 'function')
+           {
+               window.close();
+               window.opener.sc_session_redir(url_redir);
+           }
+           else
+           {
+               window.location = url_redir;
+           }
+       }
+   }
+   var SC_Link_View = false;
+   var Qsearch_ok = true;
+   var scQSInit = true;
+   var scQtReg  = 10;
+  function scSetFixedHeaders() {
+   var divScroll, gridHeaders, headerPlaceholder;
+   gridHeaders = scGetHeaderRow();
+   headerPlaceholder = $("#sc-id-fixedheaders-placeholder");
+   if (!gridHeaders) {
+     headerPlaceholder.hide();
+   }
+   else {
+    scSetFixedHeadersContents(gridHeaders, headerPlaceholder);
+    scSetFixedHeadersSize(gridHeaders);
+    scSetFixedHeadersPosition(gridHeaders, headerPlaceholder);
+    if (scIsHeaderVisible(gridHeaders)) {
+     headerPlaceholder.hide();
+    }
+    else {
+     headerPlaceholder.show();
+    }
+   }
+  }
+  function scSetFixedHeadersPosition(gridHeaders, headerPlaceholder) {
+   if(gridHeaders)
+   {
+       headerPlaceholder.css({"top": 0, "left": (Math.floor(gridHeaders.position().left) - $(document).scrollLeft()) + "px"});
+   }
+  }
+  function scIsHeaderVisible(gridHeaders) {
+   if (typeof(scIsHeaderVisibleMobile) === typeof(function(){})) { return scIsHeaderVisibleMobile(gridHeaders); }
+   return gridHeaders.offset().top > $(document).scrollTop();
+  }
+  function scGetHeaderRow() {
+   var gridHeaders = $(".sc-ui-grid-header-row-grid_defensoria-1"), headerDisplayed = true;
+   if (!gridHeaders.length) {
+    headerDisplayed = false;
+   }
+   else {
+    if (!gridHeaders.filter(":visible").length) {
+     headerDisplayed = false;
+    }
+   }
+   if (!headerDisplayed) {
+    gridHeaders = $(".sc-ui-grid-header-row").filter(":visible");
+    if (gridHeaders.length) {
+     gridHeaders = $(gridHeaders[0]);
+    }
+    else {
+     gridHeaders = false;
+    }
+   }
+   return gridHeaders;
+  }
+  function scSetFixedHeadersContents(gridHeaders, headerPlaceholder) {
+   var i, htmlContent;
+   htmlContent = "<table id=\"sc-id-fixed-headers\" class=\"scGridTabela\">";
+   for (i = 0; i < gridHeaders.length; i++) {
+    htmlContent += "<tr class=\"scGridLabel\" id=\"sc-id-fixed-headers-row-" + i + "\">" + $(gridHeaders[i]).html() + "</tr>";
+   }
+   htmlContent += "</table>";
+   headerPlaceholder.html(htmlContent);
+  }
+  function scSetFixedHeadersSize(gridHeaders) {
+   var i, j, headerColumns, gridColumns, cellHeight, cellWidth, tableOriginal, tableHeaders;
+   tableOriginal = $("#sc-ui-grid-body-c4716e4a");
+   tableHeaders = document.getElementById("sc-id-fixed-headers");
+   $(tableHeaders).css("width", $(tableOriginal).outerWidth());
+   for (i = 0; i < gridHeaders.length; i++) {
+    headerColumns = $("#sc-id-fixed-headers-row-" + i).find("td");
+    gridColumns = $(gridHeaders[i]).find("td");
+    for (j = 0; j < gridColumns.length; j++) {
+     if (window.getComputedStyle(gridColumns[j])) {
+      cellWidth = window.getComputedStyle(gridColumns[j]).width;
+      cellHeight = window.getComputedStyle(gridColumns[j]).height;
+     }
+     else {
+      cellWidth = $(gridColumns[j]).width() + "px";
+      cellHeight = $(gridColumns[j]).height() + "px";
+     }
+     $(headerColumns[j]).css({
+      "width": cellWidth,
+      "height": cellHeight
+     });
+    }
+   }
+  }
+  function SC_init_jquery(isScrollNav){ 
+   $(function(){ 
+     $('#SC_fast_search_top').keyup(function(e) {
+       scQuickSearchKeyUp('top', e);
+     });
+     $('#id_F0_top').keyup(function(e) {
+       var keyPressed = e.charCode || e.keyCode || e.which;
+       if (13 == keyPressed) {
+          return false; 
+       }
+     });
+     $('#id_F0_bot').keyup(function(e) {
+       var keyPressed = e.charCode || e.keyCode || e.which;
+       if (13 == keyPressed) {
+          return false; 
+       }
+     });
+   }); 
+  }
+  SC_init_jquery(false);
+   $(window).on('load', function() {
+     scQuickSearchInit(false, '');
+     scQuickSearchKeyUp('top', null);
+     scQSInit = false;
+   });
+   function scQuickSearchSubmit_top() {
+     document.F0_top.nmgp_opcao.value = 'fast_search';
+     document.F0_top.submit();
+   }
+   function scQuickSearchInit(bPosOnly, sPos) {
+     if (!bPosOnly) {
+       if ('' == sPos || 'top' == sPos) scQuickSearchSize('SC_fast_search_top', 'SC_fast_search_close_top', 'SC_fast_search_submit_top', 'quicksearchph_top');
+     }
+   }
+   function scQuickSearchSize(sIdInput, sIdClose, sIdSubmit, sPlaceHolder) {
+     if($('#' + sIdInput).length)
+     {
+         var oInput = $('#' + sIdInput),
+             oClose = $('#' + sIdClose),
+             oSubmit = $('#' + sIdSubmit),
+             oPlace = $('#' + sPlaceHolder),
+             iInputP = parseInt(oInput.css('padding-right')) || 0,
+             iInputB = parseInt(oInput.css('border-right-width')) || 0,
+             iInputW = oInput.outerWidth(),
+             iPlaceW = oPlace.outerWidth(),
+             oInputO = oInput.offset(),
+             oPlaceO = oPlace.offset(),
+             iNewRight;
+         iNewRight = (iPlaceW - iInputW) - (oInputO.left - oPlaceO.left) + iInputB + 1;
+         oInput.css({
+           'height': Math.max(oInput.height(), 16) + 'px',
+           'padding-right': iInputP + 16 + 7 + 'px'
+         });
+         oClose.css({
+           'right': iNewRight + 7 + 'px',
+           'cursor': 'pointer'
+         });
+         oSubmit.css({
+           'right': iNewRight + 7 + 'px',
+           'cursor': 'pointer'
+         });
+     }
+   }
+   function scQuickSearchKeyUp(sPos, e) {
+    if(typeof scQSInitVal !== 'undefined')
+    {
+     if ('' != scQSInitVal && $('#SC_fast_search_' + sPos).val() == scQSInitVal && scQSInit) {
+       $('#SC_fast_search_close_' + sPos).show();
+       $('#SC_fast_search_submit_' + sPos).hide();
+     }
+     else {
+       $('#SC_fast_search_close_' + sPos).hide();
+       $('#SC_fast_search_submit_' + sPos).show();
+     }
+     if (null != e) {
+       var keyPressed = e.charCode || e.keyCode || e.which;
+       if (13 == keyPressed) {
+         if ('top' == sPos) nm_gp_submit_qsearch('top');
+       }
+     }
+    }
+   }
+   function scBtnGroupByShow(sUrl, sPos) {
+     $.ajax({
+       type: "GET",
+       dataType: "html",
+       url: sUrl
+     }).done(function(data) {
+       $("#sc_id_groupby_placeholder_" + sPos).find("td").html("");
+       $("#sc_id_groupby_placeholder_" + sPos).find("td").html(data);
+       $("#sc_id_groupby_placeholder_" + sPos).show();
+     });
+   }
+   function scBtnGroupByHide(sPos) {
+     $("#sc_id_groupby_placeholder_" + sPos).hide();
+     $("#sc_id_groupby_placeholder_" + sPos).find("td").html("");
+   }
+   function scBtnSaveGridShow(origem, embbed, pos) {
+     $.ajax({
+       type: "POST",
+       dataType: "html",
+       url: "grid_defensoria_save_grid.php",
+       data: "path_img=/planilla/_lib/img&path_btn=/planilla/_lib/img&script_case_init=1097&script_case_session=rmhb398oesmgnkt760qm0vmk7e&script_origem=" + origem + "&embbed_groupby=" + embbed + "&toolbar_pos=" + pos
+     }).done(function(data) {
+       $("#sc_id_save_grid_placeholder_" + pos).find("td").html("");
+       $("#sc_id_save_grid_placeholder_" + pos).find("td").html(data);
+       $("#sc_id_save_grid_placeholder_" + pos).show();
+     });
+   }
+   function scBtnSaveGridHide(sPos) {
+     $("#sc_id_save_grid_placeholder_" + sPos).hide();
+     $("#sc_id_save_grid_placeholder_" + sPos).find("td").html("");
+   }
+   function scBtnSelCamposShow(sUrl, sPos) {
+     $.ajax({
+       type: "GET",
+       dataType: "html",
+       url: sUrl
+     }).done(function(data) {
+       $("#sc_id_sel_campos_placeholder_" + sPos).find("td").html("");
+       $("#sc_id_sel_campos_placeholder_" + sPos).find("td").html(data);
+       $("#sc_id_sel_campos_placeholder_" + sPos).show();
+     });
+   }
+   function scBtnSelCamposHide(sPos) {
+     $("#sc_id_sel_campos_placeholder_" + sPos).hide();
+     $("#sc_id_sel_campos_placeholder_" + sPos).find("td").html("");
+   }
+   function scBtnOrderCamposShow(sUrl, sPos) {
+     $.ajax({
+       type: "GET",
+       dataType: "html",
+       url: sUrl
+     }).done(function(data) {
+       $("#sc_id_order_campos_placeholder_" + sPos).find("td").html("");
+       $("#sc_id_order_campos_placeholder_" + sPos).find("td").html(data);
+       $("#sc_id_order_campos_placeholder_" + sPos).show();
+     });
+   }
+   function scBtnOrderCamposHide(sPos) {
+     $("#sc_id_order_campos_placeholder_" + sPos).hide();
+     $("#sc_id_order_campos_placeholder_" + sPos).find("td").html("");
+   }
+   </script> 
+   <link rel="stylesheet" href="../_lib/css/Sc9_Rhino/Sc9_Rhino_grid.css" type="text/css" media="screen" />
+   <link rel="stylesheet" href="../_lib/css/Sc9_Rhino/Sc9_Rhino_gridLTR.css" type="text/css" media="screen" />
+   <link rel="stylesheet" href="../_lib/css/Sc9_Rhino/Sc9_Rhino_error.css" type="text/css" media="screen" />
+   <link rel="stylesheet" href="../_lib/css/Sc9_Rhino/Sc9_Rhino_errorLTR.css" type="text/css" media="screen" />
+   <link rel="stylesheet" href="../_lib/css/Sc9_Rhino/Sc9_Rhino_tab.css" type="text/css" media="screen" />
+   <link rel="stylesheet" href="../_lib/css/Sc9_Rhino/Sc9_Rhino_tabLTR.css" type="text/css" media="screen" />
+  <style type="text/css">
+  </style>
+   <link rel="stylesheet" type="text/css" href="/planilla/grid_defensoria/grid_defensoria_grid_ltr.css" />
+  </HEAD>
+  <body class="scGridPage"  style="">
+  
+<div id="id_debug_window" style="display: none; position: absolute; left: 50px; top: 50px"><table class="scFormMessageTable">
+<tr><td class="scFormMessageTitle"><a  href="javascript: nmAjaxHideDebug()" onClick="nmAjaxHideDebug(); return false;" class="scButton_default" title="Cerrar" style="vertical-align: middle; display:inline-block;">Cerrar</a>
+&nbsp;&nbsp;Output</td></tr>
+<tr><td class="scFormMessageMessage" style="padding: 0px; vertical-align: top"><div style="padding: 2px; height: 200px; width: 350px; overflow: auto" id="id_debug_text"></div></td></tr>
+</table></div>
+   <form name="F3" method="post" 
+                     action="./" 
+                     target="_self" style="display: none"> 
+    <input type="hidden" name="nmgp_chave" value=""/>
+    <input type="hidden" name="nmgp_opcao" value=""/>
+    <input type="hidden" name="nmgp_ordem" value=""/>
+    <input type="hidden" name="SC_lig_apl_orig" value="grid_defensoria"/>
+    <input type="hidden" name="nmgp_parm_acum" value=""/>
+    <input type="hidden" name="nmgp_quant_linhas" value=""/>
+    <input type="hidden" name="nmgp_url_saida" value=""/>
+    <input type="hidden" name="nmgp_parms" value=""/>
+    <input type="hidden" name="nmgp_tipo_pdf" value=""/>
+    <input type="hidden" name="nmgp_outra_jan" value=""/>
+    <input type="hidden" name="nmgp_orig_pesq" value=""/>
+    <input type="hidden" name="script_case_init" value="1097"/> 
+    <input type="hidden" name="script_case_session" value="rmhb398oesmgnkt760qm0vmk7e"/> 
+   </form> 
+   <form name="F4" method="post" 
+                     action="./" 
+                     target="_self" style="display: none"> 
+    <input type="hidden" name="nmgp_opcao" value="rec"/>
+    <input type="hidden" name="rec" value=""/>
+    <input type="hidden" name="nm_call_php" value=""/>
+    <input type="hidden" name="script_case_init" value="1097"/> 
+    <input type="hidden" name="script_case_session" value="rmhb398oesmgnkt760qm0vmk7e"/> 
+   </form> 
+   <form name="F5" method="post" 
+                     action="grid_defensoria_pesq.class.php" 
+                     target="_self" style="display: none"> 
+    <input type="hidden" name="script_case_init" value="1097"/> 
+    <input type="hidden" name="script_case_session" value="rmhb398oesmgnkt760qm0vmk7e"/> 
+   </form> 
+   <form name="F6" method="post" 
+                     action="./" 
+                     target="_self" style="display: none"> 
+    <input type="hidden" name="script_case_init" value="1097"/> 
+    <input type="hidden" name="script_case_session" value="rmhb398oesmgnkt760qm0vmk7e"/> 
+   </form> 
+  <form name="Fdoc_word" method="post" 
+        action="./" 
+        target="_self"> 
+    <input type="hidden" name="nmgp_opcao" value="doc_word"/> 
+    <input type="hidden" name="nmgp_cor_word" value="AM"/> 
+    <input type="hidden" name="nmgp_navegator_print" value=""/> 
+    <input type="hidden" name="script_case_init" value="1097"/> 
+    <input type="hidden" name="script_case_session" value="rmhb398oesmgnkt760qm0vmk7e"> 
+  </form> 
+   <script type="text/javascript">
+    document.Fdoc_word.nmgp_navegator_print.value = navigator.appName;
+   function nm_gp_word_conf(cor, ajax, str_type, bol_param)
+   {
+       if ("S" == ajax)
+       {
+           $('#TB_window').remove();
+           $('body').append("<div id='TB_window'></div>");
+               nm_submit_modal("/planilla/grid_defensoria/grid_defensoria_export_email.php?script_case_init=1097&path_img=/planilla/_lib/img&path_btn=/planilla/_lib/img&sType="+ str_type +"&sAdd=__E__nmgp_cor_word=" + cor + "&KeepThis=true&TB_iframe=true&modal=true", bol_param);
+       }
+       else
+       {
+           document.Fdoc_word.nmgp_cor_word.value = cor;
+           document.Fdoc_word.submit();
+       }
+   }
+   var obj_tr      = "";
+   var css_tr      = "";
+   var field_over  = 1;
+   var field_click = 1;
+   function over_tr(obj, class_obj)
+   {
+       if (field_over != 1)
+       {
+           return;
+       }
+       if (obj_tr == obj)
+       {
+           return;
+       }
+       obj.className = 'scGridFieldOver';
+   }
+   function out_tr(obj, class_obj)
+   {
+       if (field_over != 1)
+       {
+           return;
+       }
+       if (obj_tr == obj)
+       {
+           return;
+       }
+       obj.className = class_obj;
+   }
+   function click_tr(obj, class_obj)
+   {
+       if (field_click != 1)
+       {
+           return;
+       }
+       if (obj_tr != "")
+       {
+           obj_tr.className = css_tr;
+       }
+       css_tr        = class_obj;
+       if (obj_tr == obj)
+       {
+           obj_tr     = '';
+           return;
+       }
+       obj_tr        = obj;
+       css_tr        = class_obj;
+       obj.className = 'scGridFieldClick';
+   }
+   nm_gp_ini = "ini";
+   nm_gp_rec_ini = "0";
+   nm_gp_rec_fim = "11";
+   function nm_gp_submit_rec(campo) 
+   { 
+      if (nm_gp_ini == "ini" && (campo == "ini" || campo == nm_gp_rec_ini)) 
+      { 
+          return; 
+      } 
+      if (nm_gp_fim == "fim" && (campo == "fim" || campo == nm_gp_rec_fim)) 
+      { 
+          return; 
+      } 
+      nm_gp_submit_ajax("rec", campo); 
+   } 
+   function nm_gp_submit_qsearch(pos) 
+   { 
+      var out_qsearch = "";
+       var ver_ch = eval('change_fast_' + pos);
+       if (document.getElementById('SC_fast_search_' + pos).value == '' && ver_ch == '')
+       { 
+           alert("");
+           document.getElementById('SC_fast_search_' + pos).focus();
+           return false;
+       } 
+       if (document.getElementById('SC_fast_search_' + pos).value == '__Clear_Fast__')
+       { 
+           document.getElementById('SC_fast_search_' + pos).value = '';
+       } 
+       out_qsearch = document.getElementById('fast_search_f0_' + pos).value;
+       out_qsearch += "_SCQS_" + document.getElementById('cond_fast_search_f0_' + pos).value;
+       out_qsearch += "_SCQS_" + document.getElementById('SC_fast_search_' + pos).value;
+       out_qsearch = out_qsearch.replace(/[+]/g, "__NM_PLUS__");
+       out_qsearch = out_qsearch.replace(/[&]/g, "__NM_AMP__");
+       out_qsearch = out_qsearch.replace(/[%]/g, "__NM_PRC__");
+       ajax_navigate('fast_search', out_qsearch); 
+   } 
+   function nm_gp_submit_ajax(opc, parm) 
+   { 
+      return ajax_navigate(opc, parm); 
+   } 
+   function nm_gp_submit2(campo) 
+   { 
+      nm_gp_submit_ajax("ordem", campo); 
+   } 
+   function nm_gp_submit3(parms, parm_acum, opc, ancor) 
+   { 
+      document.F3.target               = "_self"; 
+      document.F3.nmgp_parms.value     = parms ;
+      document.F3.nmgp_parm_acum.value = parm_acum ;
+      document.F3.nmgp_opcao.value     = opc ;
+      document.F3.nmgp_url_saida.value = "";
+      document.F3.action               = "./"  ;
+      if (ancor != null) {
+         ajax_save_ancor("F3", ancor);
+      } else {
+          document.F3.submit() ;
+      } 
+   } 
+   function nm_submit_modal(parms, t_parent) 
+   { 
+      if (t_parent == 'S' && typeof parent.tb_show == 'function')
+      { 
+           parent.tb_show('', parms, '');
+      } 
+      else
+      { 
+         tb_show('', parms, '');
+      } 
+   } 
+   function nm_move(tipo) 
+   { 
+      document.F6.target = "_self"; 
+      document.F6.submit() ;
+      return;
+   } 
+   function nm_gp_move(x, y, z, p, g, crt, ajax, chart_level, page_break_pdf) 
+   { 
+       document.F3.action           = "./"  ;
+       document.F3.nmgp_parms.value = "SC_null" ;
+       document.F3.nmgp_orig_pesq.value = "" ;
+       document.F3.nmgp_url_saida.value = "" ;
+       document.F3.nmgp_opcao.value = x; 
+       document.F3.nmgp_outra_jan.value = "" ;
+       document.F3.target = "_self"; 
+       if (y == 1) 
+       {
+           document.F3.target = "_blank"; 
+       }
+       if ("busca" == x)
+       {
+           document.F3.nmgp_orig_pesq.value = z; 
+           z = '';
+       }
+       if (z != null && z != '') 
+       { 
+           document.F3.nmgp_tipo_pdf.value = z; 
+       } 
+       if ("xls" == x)
+       {
+       }
+       if ("pdf" == x)
+       {
+           if ("S" == ajax)
+           {
+               $('#TB_window').remove();
+               $('body').append("<div id='TB_window'></div>");
+               nm_submit_modal("/planilla/grid_defensoria/grid_defensoria_export_email.php?script_case_init=1097&path_img=/planilla/_lib/img&path_btn=/planilla/_lib/img&sType=pdf&sAdd=__E__nmgp_tipo_pdf=" + z + "__E__sc_parms_pdf=" + p + "__E__sc_create_charts=" + crt + "__E__sc_graf_pdf=" + g + "__E__chart_level=" + chart_level + "__E__page_break_pdf=" + page_break_pdf + "&nm_opc=pdf&KeepThis=true&TB_iframe=true&modal=true", '');
+           }
+           else
+           {
+               window.location = "/planilla/grid_defensoria/grid_defensoria_iframe.php?nmgp_parms=@SC_par@1097@SC_par@grid_defensoria@SC_par@dd5241ccbc1b5fe49276958362b157d7&sc_tp_pdf=" + z + "&sc_parms_pdf=" + p + "&sc_create_charts=" + crt + "&sc_graf_pdf=" + g + '&chart_level=' + chart_level + '&page_break_pdf=' + page_break_pdf;
+           }
+       }
+       else
+       {
+           if ((x == 'igual' || x == 'edit') && NM_ancor_ult_lig != "")
+           {
+                ajax_save_ancor("F3", NM_ancor_ult_lig);
+                NM_ancor_ult_lig = "";
+            } else {
+                document.F3.submit() ;
+            } 
+       }
+   } 
+   nm_img = new Image();
+   function nm_mostra_img(imagem, altura, largura)
+   {
+       tb_show("", imagem, "");
+   }
+   function nm_mostra_doc(campo1, campo2)
+   {
+       NovaJanela = window.open (campo2 + "?nmgp_parms=" + campo1, "ScriptCase", "resizable");
+   }
+   function nm_escreve_window()
+   {
+      document.F5.action = "grid_defensoria_fim.php";
+      document.F5.submit();
+   }
+   function nm_open_popup(parms)
+   {
+       NovaJanela = window.open (parms, '', 'resizable, scrollbars');
+   }
+   </script>
+   <TABLE id="main_table_grid" cellspacing=0 cellpadding=0 align="center" valign="top" >
+     <TR>
+       <TD>
+       <div class="scGridBorder">
+  <div id="id_div_process" style="display: none; margin: 10px; whitespace: nowrap" class="scFormProcessFixed"><span class="scFormProcess"><img border="0" src="/planilla/_lib/img/scriptcase__NM__ajax_load.gif" align="absmiddle" />&nbsp;Procesando...</span></div>
+  <div id="id_div_process_block" style="display: none; margin: 10px; whitespace: nowrap"><span class="scFormProcess"><img border="0" src="/planilla/_lib/img/scriptcase__NM__ajax_load.gif" align="absmiddle" />&nbsp;Procesando...</span></div>
+  <div id="id_fatal_error" class="scGridLabel" style="display: none; position: absolute"></div>
+       <TABLE width='100%' cellspacing=0 cellpadding=0>
+ <TR id="sc_grid_head">
+  <TD class="scGridTabelaTd" style="vertical-align: top">
+<style>
+    .scMenuTHeaderFont img, .scGridHeaderFont img , .scFormHeaderFont img , .scTabHeaderFont img , .scContainerHeaderFont img , .scFilterHeaderFont img { height:23px;}
+</style>
+<div class="scGridHeader" style="height: 54px; padding: 17px 15px; box-sizing: border-box;margin: -1px 0px 0px 0px;width: 100%;">
+    <div class="scGridHeaderFont" style="float: left; text-transform: uppercase;">Consulta - Caja de Seguro Social - Planilla</div>
+    <div class="scGridHeaderFont" style="float: right;">   <IMG SRC="/planilla/_lib/img/sys__NM__img__NM__logo-css-origiadnal.png" BORDER="0"/></div>
+</div>
+  </TD>
+ </TR>
+ <TR>
+  <TD id='sc_grid_content' style='padding: 0px;' colspan=1>
+    <table width='100%' cellspacing=0 cellpadding=0>
+      <tr style="display: none">
+      <td>
+      <form id="id_F0_top" name="F0_top" method="post" action="./" target="_self"> 
+      <input type="text" id="id_sc_truta_f0_top" name="sc_truta_f0_top" value=""/> 
+      <input type="hidden" id="script_init_f0_top" name="script_case_init" value="1097"/> 
+      <input type=hidden id="script_session_f0_top" name="script_case_session" value="rmhb398oesmgnkt760qm0vmk7e"/>
+      <input type="hidden" id="opcao_f0_top" name="nmgp_opcao" value="muda_qt_linhas"/> 
+      </td></tr><tr>
+       <td id="sc_grid_toobar_top"  class="scGridTabelaTd" valign="top"> 
+        <table class="scGridToolbar" style="padding: 0px; border-spacing: 0px; border-width: 0px; vertical-align: top;" width="100%" valign="top">
+         <tr> 
+          <td class="scGridToolbarPadding" nowrap valign="middle" align="left" width="33%"> 
+           <script type="text/javascript">var change_fast_top = "";</script>
+          <input type="hidden"  id="fast_search_f0_top" name="nmgp_fast_search" value="SC_all_Cmp">
+          <input type="hidden" id="cond_fast_search_f0_top" name="nmgp_cond_fast_search" value="qp">
+          <script type="text/javascript">var scQSInitVal = "";</script>
+          <span id="quicksearchph_top">
+           <input type="text" id="SC_fast_search_top" class="css_toolbar_obj" style="vertical-align: middle;" name="nmgp_arg_fast_search" value="" size="10" onChange="change_fast_top = 'CH';" alt="{maxLength: 255}" placeholder="Búsqueda rápida">
+           <img style="display: none" id="SC_fast_search_close_top" src="/planilla/_lib/img/scriptcase__NM__btn__NM__scriptcase9_Rhino__NM__nm_scriptcase9_Rhino_cancel.png" onclick="document.getElementById('SC_fast_search_top').value = '__Clear_Fast__'; nm_gp_submit_qsearch('top');">
+           <img style="display: none" id="SC_fast_search_submit_top" src="/planilla/_lib/img/scriptcase__NM__btn__NM__scriptcase9_Rhino__NM__nm_scriptcase9_Rhino_qsearch.png" onclick="nm_gp_submit_qsearch('top');">
+          </span>
+         </td> 
+          <td class="scGridToolbarPadding" nowrap valign="middle" align="center" width="33%"> 
+           <a  href="javascript: nm_gp_move('busca', '0', 'grid');" id="pesq_top" onClick="nm_gp_move('busca', '0', 'grid');; return false;" class="scButton_default" title="Buscar un registro" style="vertical-align: middle; display:inline-block;">Búsqueda Avanzada</a>
+ 
+         </td> 
+          <td class="scGridToolbarPadding" nowrap valign="middle" align="right" width="33%"> 
+           <a  href="javascript: document.F5.action='grid_defensoria_fim.php'; document.F5.submit();" id="sai_top" onClick="document.F5.action='grid_defensoria_fim.php'; document.F5.submit();; return false;" class="scButton_default" title="Salir de la aplicación" style="vertical-align: middle; display:inline-block;">Salir</a>
+ 
+         </td> 
+        </tr> 
+       </table> 
+      </td> 
+     </tr> 
+      <tr style="display: none">
+      <td> 
+     </form> 
+      </td> 
+     </tr> 
+     <tr id="sc_id_save_grid_placeholder_top" style="display: none">
+      <td>
+      </td>
+     </tr>
+     <tr id="sc_id_groupby_placeholder_top" style="display: none">
+      <td>
+      </td>
+     </tr>
+     <tr id="sc_id_sel_campos_placeholder_top" style="display: none">
+      <td>
+      </td>
+     </tr>
+     <tr id="sc_id_export_email_placeholder_top" style="display: none">
+      <td>
+      </td>
+     </tr>
+     <tr id="sc_id_order_campos_placeholder_top" style="display: none">
+      <td>
+      </td>
+     </tr>
+ <TR> 
+  <TD id="sc_grid_body" class="scGridTabelaTd" style="vertical-align: top;text-align: center;">
+   <TABLE class="scGridTabela" id="sc-ui-grid-body-c4716e4a" align="center"  id="apl_grid_defensoria#?#1" width="100%">
+    <TR id="tit_grid_defensoria__SCCS__1" align="center" class="scGridLabel sc-ui-grid-header-row sc-ui-grid-header-row-grid_defensoria-1">
+     <TD class="scGridBlockBg" style="width: 0px; display:none;"  style="" >&nbsp;</TD>
+     <TD class="scGridLabelFont"  style="" >&nbsp;</TD>
+     <TD class="scGridLabelFont css_identific_label"  style="" >
+<a href="javascript:nm_gp_submit2('IDENTIFIC')" class="scGridLabelLink"><IMG style="float: right" SRC="/planilla/_lib/img/scriptcase__NM__btn__NM__scriptcase9_Rhino__NM__nm_scriptcase9_Rhino_sort.png" BORDER="0"/>Identificacion / Posicion</a>
+</TD>
+     <TD class="scGridLabelFont css_cedula_label"  style="" >
+<a href="javascript:nm_gp_submit2('CEDULA')" class="scGridLabelLink"><IMG style="float: right" SRC="/planilla/_lib/img/scriptcase__NM__btn__NM__scriptcase9_Rhino__NM__nm_scriptcase9_Rhino_sort.png" BORDER="0"/>CÃ©dula</a>
+</TD>
+     <TD class="scGridLabelFont css_sc_field_0_label"  style="" >
+<a href="javascript:nm_gp_submit2('sc_field_0')" class="scGridLabelLink"><IMG style="float: right" SRC="/planilla/_lib/img/scriptcase__NM__btn__NM__scriptcase9_Rhino__NM__nm_scriptcase9_Rhino_sort.png" BORDER="0"/>Nombre completo</a>
+</TD>
+     <TD class="scGridLabelFont css_tcargo_label"  style="" >
+<a href="javascript:nm_gp_submit2('TCARGO')" class="scGridLabelLink"><IMG style="float: right" SRC="/planilla/_lib/img/scriptcase__NM__btn__NM__scriptcase9_Rhino__NM__nm_scriptcase9_Rhino_sort.png" BORDER="0"/>Cargo</a>
+</TD>
+     <TD class="scGridLabelFont css_depto_label"  style="" >
+<a href="javascript:nm_gp_submit2('Depto')" class="scGridLabelLink"><IMG style="float: right" SRC="/planilla/_lib/img/scriptcase__NM__btn__NM__scriptcase9_Rhino__NM__nm_scriptcase9_Rhino_sort.png" BORDER="0"/>Departamento</a>
+</TD>
+     <TD class="scGridLabelFont css_estatus_label"  style="" >
+<a href="javascript:nm_gp_submit2('Estatus')" class="scGridLabelLink"><IMG style="float: right" SRC="/planilla/_lib/img/scriptcase__NM__btn__NM__scriptcase9_Rhino__NM__nm_scriptcase9_Rhino_sort.png" BORDER="0"/>Estatus</a>
+</TD>
+     <TD class="scGridLabelFont css_inicio_planilla_label"  style="" >
+<a href="javascript:nm_gp_submit2('inicio_planilla')" class="scGridLabelLink"><IMG style="float: right" SRC="/planilla/_lib/img/scriptcase__NM__btn__NM__scriptcase9_Rhino__NM__nm_scriptcase9_Rhino_sort.png" BORDER="0"/>Inicio Planilla</a>
+</TD>
+     <TD class="scGridLabelFont css_salario_label"  style="" >
+<a href="javascript:nm_gp_submit2('Salario')" class="scGridLabelLink"><IMG style="float: right" SRC="/planilla/_lib/img/scriptcase__NM__btn__NM__scriptcase9_Rhino__NM__nm_scriptcase9_Rhino_sort.png" BORDER="0"/>Salario</a>
+</TD>
+     <TD class="scGridLabelFont css_gastos_label"  style="" >
+<a href="javascript:nm_gp_submit2('Gastos')" class="scGridLabelLink"><IMG style="float: right" SRC="/planilla/_lib/img/scriptcase__NM__btn__NM__scriptcase9_Rhino__NM__nm_scriptcase9_Rhino_sort.png" BORDER="0"/>Gastos</a>
+</TD>
+     <TD class="scGridLabelFont css_ssueldo_label"  style="" >
+<a href="javascript:nm_gp_submit2('Ssueldo')" class="scGridLabelLink"><IMG style="float: right" SRC="/planilla/_lib/img/scriptcase__NM__btn__NM__scriptcase9_Rhino__NM__nm_scriptcase9_Rhino_sort.png" BORDER="0"/>Sobre sueldo</a>
+</TD>
+     <TD class="scGridLabelFont css_total_label"  style="" >
+<a href="javascript:nm_gp_submit2('Total')" class="scGridLabelLink"><IMG style="float: right" SRC="/planilla/_lib/img/scriptcase__NM__btn__NM__scriptcase9_Rhino__NM__nm_scriptcase9_Rhino_sort.png" BORDER="0"/>Total</a>
+</TD>
+     <TD class="scGridLabelFont css_sc_field_1_label"  style="" >
+<a href="javascript:nm_gp_submit2('sc_field_1')" class="scGridLabelLink"><IMG style="float: right" SRC="/planilla/_lib/img/scriptcase__NM__btn__NM__scriptcase9_Rhino__NM__nm_scriptcase9_Rhino_sort.png" BORDER="0"/>Objeto De Gasto</a>
+</TD>
+</TR>
+    <TR  class="scGridFieldOdd" onmouseover="over_tr(this, 'scGridFieldOdd');" onmouseout="out_tr(this, 'scGridFieldOdd');" onclick="click_tr(this, 'scGridFieldOdd');" id="SC_ancor1">
+     <TD rowspan="1" class="scGridBlockBg" style="width: 0px; display:none;"  style="" NOWRAP align="" valign=""   HEIGHT="0px">&nbsp;</TD>
+     <TD rowspan="1" class="scGridFieldOddFont"  NOWRAP align="center" valign="top" WIDTH="1px"  HEIGHT="0px"><table style="padding: 0px; border-spacing: 0px; border-width: 0px;"><tr><td style="padding: 0px"><a  border="0px" href="javascript: nm_gp_submit3('@SC_par@1097@SC_par@grid_defensoria@SC_par@e7a58d16db609c34c5763410e5680fef', '', 'detalhe', '1')" title="Ver Detalles" style="vertical-align: middle; display:inline-block;" align="absmiddle" onClick="nm_gp_submit3('@SC_par@1097@SC_par@grid_defensoria@SC_par@e7a58d16db609c34c5763410e5680fef', '', 'detalhe', '1'); return false;"><img  src="/planilla/_lib/img/scriptcase__NM__nm_scriptcase9_Rhino_details.png" style="border-width: 0; cursor: pointer" /></a>
+</td></tr></table></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_identific_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_identific_1">10202000165</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_cedula_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_cedula_1">1-721-2263</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_sc_field_0_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_sc_field_0_1">JEROME CAITO</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_tcargo_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_tcargo_1">ALMACENISTA I</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_depto_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_depto_1">ADMINISTRACION</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_estatus_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_estatus_1">PERMANENTE</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_inicio_planilla_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_inicio_planilla_1">2014-09-16</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_salario_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_salario_1">902</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_gastos_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_gastos_1">0</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_ssueldo_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_ssueldo_1">0</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_total_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_total_1">902</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_sc_field_1_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_sc_field_1_1">001</span></TD>
+</TR>
+    <TR  class="scGridFieldEven" onmouseover="over_tr(this, 'scGridFieldEven');" onmouseout="out_tr(this, 'scGridFieldEven');" onclick="click_tr(this, 'scGridFieldEven');" id="SC_ancor2">
+     <TD rowspan="1" class="scGridBlockBg" style="width: 0px; display:none;"  style="" NOWRAP align="" valign=""   HEIGHT="0px">&nbsp;</TD>
+     <TD rowspan="1" class="scGridFieldEvenFont"  NOWRAP align="center" valign="top" WIDTH="1px"  HEIGHT="0px"><table style="padding: 0px; border-spacing: 0px; border-width: 0px;"><tr><td style="padding: 0px"><a  border="0px" href="javascript: nm_gp_submit3('@SC_par@1097@SC_par@grid_defensoria@SC_par@5b3b7a6faee835670b2bb77e15c9c84b', '', 'detalhe', '2')" title="Ver Detalles" style="vertical-align: middle; display:inline-block;" align="absmiddle" onClick="nm_gp_submit3('@SC_par@1097@SC_par@grid_defensoria@SC_par@5b3b7a6faee835670b2bb77e15c9c84b', '', 'detalhe', '2'); return false;"><img  src="/planilla/_lib/img/scriptcase__NM__nm_scriptcase9_Rhino_details.png" style="border-width: 0; cursor: pointer" /></a>
+</td></tr></table></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_identific_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_identific_2">10202000166</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_cedula_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_cedula_2">1-46-410</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_sc_field_0_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_sc_field_0_2">LEONARDO ESPINOSA</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_tcargo_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_tcargo_2">GUARDIAN </span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_depto_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_depto_2">ADMINISTRACION</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_estatus_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_estatus_2">PERMANENTE</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_inicio_planilla_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_inicio_planilla_2">2012-08-06</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_salario_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_salario_2">1,015</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_gastos_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_gastos_2">0</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_ssueldo_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_ssueldo_2">0</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_total_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_total_2">1,015</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_sc_field_1_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_sc_field_1_2">001</span></TD>
+</TR>
+    <TR  class="scGridFieldOdd" onmouseover="over_tr(this, 'scGridFieldOdd');" onmouseout="out_tr(this, 'scGridFieldOdd');" onclick="click_tr(this, 'scGridFieldOdd');" id="SC_ancor3">
+     <TD rowspan="1" class="scGridBlockBg" style="width: 0px; display:none;"  style="" NOWRAP align="" valign=""   HEIGHT="0px">&nbsp;</TD>
+     <TD rowspan="1" class="scGridFieldOddFont"  NOWRAP align="center" valign="top" WIDTH="1px"  HEIGHT="0px"><table style="padding: 0px; border-spacing: 0px; border-width: 0px;"><tr><td style="padding: 0px"><a  border="0px" href="javascript: nm_gp_submit3('@SC_par@1097@SC_par@grid_defensoria@SC_par@6550c29639492ec63682748b2c7b1bc5', '', 'detalhe', '3')" title="Ver Detalles" style="vertical-align: middle; display:inline-block;" align="absmiddle" onClick="nm_gp_submit3('@SC_par@1097@SC_par@grid_defensoria@SC_par@6550c29639492ec63682748b2c7b1bc5', '', 'detalhe', '3'); return false;"><img  src="/planilla/_lib/img/scriptcase__NM__nm_scriptcase9_Rhino_details.png" style="border-width: 0; cursor: pointer" /></a>
+</td></tr></table></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_identific_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_identific_3">10202000168</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_cedula_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_cedula_3">1-738-2351</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_sc_field_0_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_sc_field_0_3">SERGIO GRANT</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_tcargo_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_tcargo_3">OFICINISTA I</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_depto_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_depto_3">ADMINISTRACION</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_estatus_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_estatus_3">PERMANENTE</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_inicio_planilla_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_inicio_planilla_3">2020-10-01</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_salario_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_salario_3">690</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_gastos_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_gastos_3">0</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_ssueldo_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_ssueldo_3">0</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_total_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_total_3">690</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_sc_field_1_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_sc_field_1_3">001</span></TD>
+</TR>
+    <TR  class="scGridFieldEven" onmouseover="over_tr(this, 'scGridFieldEven');" onmouseout="out_tr(this, 'scGridFieldEven');" onclick="click_tr(this, 'scGridFieldEven');" id="SC_ancor4">
+     <TD rowspan="1" class="scGridBlockBg" style="width: 0px; display:none;"  style="" NOWRAP align="" valign=""   HEIGHT="0px">&nbsp;</TD>
+     <TD rowspan="1" class="scGridFieldEvenFont"  NOWRAP align="center" valign="top" WIDTH="1px"  HEIGHT="0px"><table style="padding: 0px; border-spacing: 0px; border-width: 0px;"><tr><td style="padding: 0px"><a  border="0px" href="javascript: nm_gp_submit3('@SC_par@1097@SC_par@grid_defensoria@SC_par@7b5fa4d835e74f50efe01d5379fe30d9', '', 'detalhe', '4')" title="Ver Detalles" style="vertical-align: middle; display:inline-block;" align="absmiddle" onClick="nm_gp_submit3('@SC_par@1097@SC_par@grid_defensoria@SC_par@7b5fa4d835e74f50efe01d5379fe30d9', '', 'detalhe', '4'); return false;"><img  src="/planilla/_lib/img/scriptcase__NM__nm_scriptcase9_Rhino_details.png" style="border-width: 0; cursor: pointer" /></a>
+</td></tr></table></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_identific_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_identific_4">10202000169</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_cedula_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_cedula_4">1-731-799</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_sc_field_0_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_sc_field_0_4">SUSANA CASTILLO</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_tcargo_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_tcargo_4">SECRETARIA I</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_depto_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_depto_4">ADMINISTRACION</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_estatus_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_estatus_4">PERMANENTE</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_inicio_planilla_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_inicio_planilla_4">2020-10-23</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_salario_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_salario_4">712</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_gastos_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_gastos_4">0</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_ssueldo_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_ssueldo_4">0</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_total_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_total_4">712</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_sc_field_1_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_sc_field_1_4">001</span></TD>
+</TR>
+    <TR  class="scGridFieldOdd" onmouseover="over_tr(this, 'scGridFieldOdd');" onmouseout="out_tr(this, 'scGridFieldOdd');" onclick="click_tr(this, 'scGridFieldOdd');" id="SC_ancor5">
+     <TD rowspan="1" class="scGridBlockBg" style="width: 0px; display:none;"  style="" NOWRAP align="" valign=""   HEIGHT="0px">&nbsp;</TD>
+     <TD rowspan="1" class="scGridFieldOddFont"  NOWRAP align="center" valign="top" WIDTH="1px"  HEIGHT="0px"><table style="padding: 0px; border-spacing: 0px; border-width: 0px;"><tr><td style="padding: 0px"><a  border="0px" href="javascript: nm_gp_submit3('@SC_par@1097@SC_par@grid_defensoria@SC_par@8a321e9c8148ebc6010eab06f3be8db0', '', 'detalhe', '5')" title="Ver Detalles" style="vertical-align: middle; display:inline-block;" align="absmiddle" onClick="nm_gp_submit3('@SC_par@1097@SC_par@grid_defensoria@SC_par@8a321e9c8148ebc6010eab06f3be8db0', '', 'detalhe', '5'); return false;"><img  src="/planilla/_lib/img/scriptcase__NM__nm_scriptcase9_Rhino_details.png" style="border-width: 0; cursor: pointer" /></a>
+</td></tr></table></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_identific_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_identific_5">10202000170</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_cedula_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_cedula_5">1-716-1666</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_sc_field_0_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_sc_field_0_5">SULEINA TYRELL</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_tcargo_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_tcargo_5">ANALISTA DE PRESUPUESTO II</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_depto_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_depto_5">ADMINISTRACION</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_estatus_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_estatus_5">PERMANENTE</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_inicio_planilla_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_inicio_planilla_5">2020-03-17</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_salario_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_salario_5">1,175</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_gastos_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_gastos_5">0</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_ssueldo_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_ssueldo_5">0</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_total_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_total_5">1,175</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_sc_field_1_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_sc_field_1_5">001</span></TD>
+</TR>
+    <TR  class="scGridFieldEven" onmouseover="over_tr(this, 'scGridFieldEven');" onmouseout="out_tr(this, 'scGridFieldEven');" onclick="click_tr(this, 'scGridFieldEven');" id="SC_ancor6">
+     <TD rowspan="1" class="scGridBlockBg" style="width: 0px; display:none;"  style="" NOWRAP align="" valign=""   HEIGHT="0px">&nbsp;</TD>
+     <TD rowspan="1" class="scGridFieldEvenFont"  NOWRAP align="center" valign="top" WIDTH="1px"  HEIGHT="0px"><table style="padding: 0px; border-spacing: 0px; border-width: 0px;"><tr><td style="padding: 0px"><a  border="0px" href="javascript: nm_gp_submit3('@SC_par@1097@SC_par@grid_defensoria@SC_par@102266dced1d48213853a7f7c2358df1', '', 'detalhe', '6')" title="Ver Detalles" style="vertical-align: middle; display:inline-block;" align="absmiddle" onClick="nm_gp_submit3('@SC_par@1097@SC_par@grid_defensoria@SC_par@102266dced1d48213853a7f7c2358df1', '', 'detalhe', '6'); return false;"><img  src="/planilla/_lib/img/scriptcase__NM__nm_scriptcase9_Rhino_details.png" style="border-width: 0; cursor: pointer" /></a>
+</td></tr></table></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_identific_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_identific_6">10202000171</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_cedula_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_cedula_6">1-736-1540</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_sc_field_0_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_sc_field_0_6">JAIME RAMIREZ</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_tcargo_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_tcargo_6">MENSAJERO I</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_depto_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_depto_6">ADMINISTRACION</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_estatus_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_estatus_6">PERMANENTE</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_inicio_planilla_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_inicio_planilla_6">2020-10-26</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_salario_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_salario_6">690</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_gastos_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_gastos_6">0</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_ssueldo_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_ssueldo_6">0</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_total_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_total_6">690</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_sc_field_1_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_sc_field_1_6">001</span></TD>
+</TR>
+    <TR  class="scGridFieldOdd" onmouseover="over_tr(this, 'scGridFieldOdd');" onmouseout="out_tr(this, 'scGridFieldOdd');" onclick="click_tr(this, 'scGridFieldOdd');" id="SC_ancor7">
+     <TD rowspan="1" class="scGridBlockBg" style="width: 0px; display:none;"  style="" NOWRAP align="" valign=""   HEIGHT="0px">&nbsp;</TD>
+     <TD rowspan="1" class="scGridFieldOddFont"  NOWRAP align="center" valign="top" WIDTH="1px"  HEIGHT="0px"><table style="padding: 0px; border-spacing: 0px; border-width: 0px;"><tr><td style="padding: 0px"><a  border="0px" href="javascript: nm_gp_submit3('@SC_par@1097@SC_par@grid_defensoria@SC_par@6d848e25ef91aaa720236e3513f78d3d', '', 'detalhe', '7')" title="Ver Detalles" style="vertical-align: middle; display:inline-block;" align="absmiddle" onClick="nm_gp_submit3('@SC_par@1097@SC_par@grid_defensoria@SC_par@6d848e25ef91aaa720236e3513f78d3d', '', 'detalhe', '7'); return false;"><img  src="/planilla/_lib/img/scriptcase__NM__nm_scriptcase9_Rhino_details.png" style="border-width: 0; cursor: pointer" /></a>
+</td></tr></table></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_identific_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_identific_7">10202000173</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_cedula_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_cedula_7">8-851-2198</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_sc_field_0_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_sc_field_0_7">JOSE DIAZ</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_tcargo_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_tcargo_7">ANALISTA DE COMPRAS I</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_depto_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_depto_7">ADMINISTRACION</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_estatus_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_estatus_7">PERMANENTE</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_inicio_planilla_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_inicio_planilla_7">2015-06-24</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_salario_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_salario_7">1,231</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_gastos_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_gastos_7">0</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_ssueldo_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_ssueldo_7">0</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_total_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_total_7">1,231</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_sc_field_1_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_sc_field_1_7">001</span></TD>
+</TR>
+    <TR  class="scGridFieldEven" onmouseover="over_tr(this, 'scGridFieldEven');" onmouseout="out_tr(this, 'scGridFieldEven');" onclick="click_tr(this, 'scGridFieldEven');" id="SC_ancor8">
+     <TD rowspan="1" class="scGridBlockBg" style="width: 0px; display:none;"  style="" NOWRAP align="" valign=""   HEIGHT="0px">&nbsp;</TD>
+     <TD rowspan="1" class="scGridFieldEvenFont"  NOWRAP align="center" valign="top" WIDTH="1px"  HEIGHT="0px"><table style="padding: 0px; border-spacing: 0px; border-width: 0px;"><tr><td style="padding: 0px"><a  border="0px" href="javascript: nm_gp_submit3('@SC_par@1097@SC_par@grid_defensoria@SC_par@a345a136762896739b387fe8583a4564', '', 'detalhe', '8')" title="Ver Detalles" style="vertical-align: middle; display:inline-block;" align="absmiddle" onClick="nm_gp_submit3('@SC_par@1097@SC_par@grid_defensoria@SC_par@a345a136762896739b387fe8583a4564', '', 'detalhe', '8'); return false;"><img  src="/planilla/_lib/img/scriptcase__NM__nm_scriptcase9_Rhino_details.png" style="border-width: 0; cursor: pointer" /></a>
+</td></tr></table></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_identific_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_identific_8">10202000174</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_cedula_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_cedula_8">PE-13-1758</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_sc_field_0_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_sc_field_0_8">EDGAR GARITA</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_tcargo_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_tcargo_8">ANALISTA DE COMPRAS I</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_depto_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_depto_8">ADMINISTRACION</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_estatus_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_estatus_8">PERMANENTE</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_inicio_planilla_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_inicio_planilla_8">2012-02-03</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_salario_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_salario_8">1,351</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_gastos_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_gastos_8">0</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_ssueldo_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_ssueldo_8">0</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_total_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_total_8">1,351</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_sc_field_1_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_sc_field_1_8">001</span></TD>
+</TR>
+    <TR  class="scGridFieldOdd" onmouseover="over_tr(this, 'scGridFieldOdd');" onmouseout="out_tr(this, 'scGridFieldOdd');" onclick="click_tr(this, 'scGridFieldOdd');" id="SC_ancor9">
+     <TD rowspan="1" class="scGridBlockBg" style="width: 0px; display:none;"  style="" NOWRAP align="" valign=""   HEIGHT="0px">&nbsp;</TD>
+     <TD rowspan="1" class="scGridFieldOddFont"  NOWRAP align="center" valign="top" WIDTH="1px"  HEIGHT="0px"><table style="padding: 0px; border-spacing: 0px; border-width: 0px;"><tr><td style="padding: 0px"><a  border="0px" href="javascript: nm_gp_submit3('@SC_par@1097@SC_par@grid_defensoria@SC_par@3578dc9b46c8d6c6d82fd9c6dcb8de04', '', 'detalhe', '9')" title="Ver Detalles" style="vertical-align: middle; display:inline-block;" align="absmiddle" onClick="nm_gp_submit3('@SC_par@1097@SC_par@grid_defensoria@SC_par@3578dc9b46c8d6c6d82fd9c6dcb8de04', '', 'detalhe', '9'); return false;"><img  src="/planilla/_lib/img/scriptcase__NM__nm_scriptcase9_Rhino_details.png" style="border-width: 0; cursor: pointer" /></a>
+</td></tr></table></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_identific_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_identific_9">10202000175</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_cedula_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_cedula_9">1-25-957</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_sc_field_0_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_sc_field_0_9">ELIECER GUTIERREZ</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_tcargo_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_tcargo_9">CONDUCTOR DE VEHICULO I</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_depto_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_depto_9">ADMINISTRACION</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_estatus_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_estatus_9">PERMANENTE</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_inicio_planilla_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_inicio_planilla_9">2007-11-01</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_salario_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_salario_9">1,130</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_gastos_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_gastos_9">0</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_ssueldo_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_ssueldo_9">0</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_total_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_total_9">1,130</span></TD>
+     <TD rowspan="1" class="scGridFieldOddFont css_sc_field_1_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_sc_field_1_9">001</span></TD>
+</TR>
+    <TR  class="scGridFieldEven" onmouseover="over_tr(this, 'scGridFieldEven');" onmouseout="out_tr(this, 'scGridFieldEven');" onclick="click_tr(this, 'scGridFieldEven');" id="SC_ancor10">
+     <TD rowspan="1" class="scGridBlockBg" style="width: 0px; display:none;"  style="" NOWRAP align="" valign=""   HEIGHT="0px">&nbsp;</TD>
+     <TD rowspan="1" class="scGridFieldEvenFont"  NOWRAP align="center" valign="top" WIDTH="1px"  HEIGHT="0px"><table style="padding: 0px; border-spacing: 0px; border-width: 0px;"><tr><td style="padding: 0px"><a  border="0px" href="javascript: nm_gp_submit3('@SC_par@1097@SC_par@grid_defensoria@SC_par@bef7ec3f95e4364d0272fecbcc33662a', '', 'detalhe', '10')" title="Ver Detalles" style="vertical-align: middle; display:inline-block;" align="absmiddle" onClick="nm_gp_submit3('@SC_par@1097@SC_par@grid_defensoria@SC_par@bef7ec3f95e4364d0272fecbcc33662a', '', 'detalhe', '10'); return false;"><img  src="/planilla/_lib/img/scriptcase__NM__nm_scriptcase9_Rhino_details.png" style="border-width: 0; cursor: pointer" /></a>
+</td></tr></table></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_identific_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_identific_10">10202000176</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_cedula_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_cedula_10">1-50-648</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_sc_field_0_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_sc_field_0_10">JOSE CABALLERO</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_tcargo_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_tcargo_10">GUARDIAN </span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_depto_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_depto_10">ADMINISTRACION</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_estatus_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_estatus_10">PERMANENTE</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_inicio_planilla_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_inicio_planilla_10">2009-07-16</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_salario_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_salario_10">1,107</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_gastos_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_gastos_10">0</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_ssueldo_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_ssueldo_10">0</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_total_grid_line"  style="" NOWRAP align="" valign=""   HEIGHT="0px"><span id="id_sc_field_total_10">1,107</span></TD>
+     <TD rowspan="1" class="scGridFieldEvenFont css_sc_field_1_grid_line"  style=""  align="" valign=""   HEIGHT="0px"><span id="id_sc_field_sc_field_1_10">001</span></TD>
+</TR>
+</TABLE></TD></tr>    </TR>
+     <tr id="sc_id_save_grid_placeholder_bot" style="display: none">
+      <td>
+      </td>
+     </tr>
+     <tr id="sc_id_groupby_placeholder_bot" style="display: none">
+      <td>
+      </td>
+     </tr>
+     <tr id="sc_id_sel_campos_placeholder_bot" style="display: none">
+      <td>
+      </td>
+     </tr>
+     <tr id="sc_id_export_email_placeholder_bot" style="display: none">
+      <td>
+      </td>
+     </tr>
+     <tr id="sc_id_order_campos_placeholder_bot" style="display: none">
+      <td>
+      </td>
+     </tr>
+      <tr style="display: none">
+      <td>
+      <form id="id_F0_bot" name="F0_bot" method="post" action="./" target="_self"> 
+      <input type="text" id="id_sc_truta_f0_bot" name="sc_truta_f0_bot" value=""/> 
+      <input type="hidden" id="script_init_f0_bot" name="script_case_init" value="1097"/> 
+      <input type=hidden id="script_session_f0_bot" name="script_case_session" value="rmhb398oesmgnkt760qm0vmk7e"/>
+      <input type="hidden" id="opcao_f0_bot" name="nmgp_opcao" value="muda_qt_linhas"/> 
+      </td></tr><tr>
+       <td id="sc_grid_toobar_bot"  class="scGridTabelaTd" valign="top"> 
+        <table class="scGridToolbar" style="padding: 0px; border-spacing: 0px; border-width: 0px; vertical-align: top;" width="100%" valign="top">
+         <tr> 
+          <td class="scGridToolbarPadding" nowrap valign="middle" align="left" width="33%"> 
+           <a  href="javascript: var rec_nav = ((document.getElementById('rec_f0_bot').value - 1) * 10) + 1; nm_gp_submit_ajax('muda_rec_linhas', rec_nav);" id="brec_bot" onClick="var rec_nav = ((document.getElementById('rec_f0_bot').value - 1) * 10) + 1; nm_gp_submit_ajax('muda_rec_linhas', rec_nav);; return false;" class="scButton_default" title="Ir a línea" style="vertical-align: middle; display:inline-block;">Ir a</a>
+ 
+          <input id="rec_f0_bot" type="text" class="css_toolbar_obj" name="rec" value="1" style="width:25px;vertical-align: middle;"/> 
+          <span class="css_toolbar_obj" style="border: 0px;vertical-align: middle;">Ver</span>
+          <select class="css_toolbar_obj" style="vertical-align: middle;" id="quant_linhas_f0_bot" name="nmgp_quant_linhas" onchange="sc_ind = document.getElementById('quant_linhas_f0_bot').selectedIndex; nm_gp_submit_ajax('muda_qt_linhas', document.getElementById('quant_linhas_f0_bot').options[sc_ind].value);"> 
+           <option value="10"  selected>10</option>
+           <option value="20" >20</option>
+           <option value="50" >50</option>
+          </select>
+         </td> 
+          <td class="scGridToolbarPadding" nowrap valign="middle" align="center" width="33%"> 
+           <a  id="first_bot" border="0px" href="javascript: nm_gp_submit_rec('ini');" title="Mover al inicio" style="vertical-align: middle; display:inline-block;" align="absmiddle" onClick="nm_gp_submit_rec('ini');; return false;"><img  id="id_img_first_bot" src="/planilla/_lib/img/scriptcase__NM__nm_scriptcase9_Rhino_first_disabled.png" style="border-width: 0; cursor: pointer" /></a>
+ 
+           <a  id="back_bot" border="0px" href="javascript: nm_gp_submit_rec('0');" title="Volver un registro" style="vertical-align: middle; display:inline-block;" align="absmiddle" onClick="nm_gp_submit_rec('0');; return false;"><img  id="id_img_back_bot" src="/planilla/_lib/img/scriptcase__NM__nm_scriptcase9_Rhino_left_disabled.png" style="border-width: 0; cursor: pointer" /></a>
+ 
+            <span class="scGridToolbarNavOpen" style="vertical-align: middle;">1</span>
+            <a class="scGridToolbarNav" style="vertical-align: middle;" href="javascript: nm_gp_submit_rec(11);">2</a>
+            <a class="scGridToolbarNav" style="vertical-align: middle;" href="javascript: nm_gp_submit_rec(21);">3</a>
+            <a class="scGridToolbarNav" style="vertical-align: middle;" href="javascript: nm_gp_submit_rec(31);">4</a>
+            <a class="scGridToolbarNav" style="vertical-align: middle;" href="javascript: nm_gp_submit_rec(41);">5</a>
+           <a  id="forward_bot" border="0px" href="javascript: nm_gp_submit_rec('11');" title="Avanzar al próximo registro" style="vertical-align: middle; display:inline-block;" align="absmiddle" onClick="nm_gp_submit_rec('11');; return false;"><img  id="id_img_forward_bot" src="/planilla/_lib/img/scriptcase__NM__nm_scriptcase9_Rhino_right_enabled.png" style="border-width: 0; cursor: pointer" /></a>
+ 
+           <a  id="last_bot" border="0px" href="javascript: nm_gp_submit_rec('fim');" title="Mover al final" style="vertical-align: middle; display:inline-block;" align="absmiddle" onClick="nm_gp_submit_rec('fim');; return false;"><img  id="id_img_last_bot" src="/planilla/_lib/img/scriptcase__NM__nm_scriptcase9_Rhino_last_enabled.png" style="border-width: 0; cursor: pointer" /></a>
+ 
+         </td> 
+          <td class="scGridToolbarPadding" nowrap valign="middle" align="right" width="33%"> 
+         </td> 
+        </tr> 
+       </table> 
+      </td> 
+     </tr> 
+      <tr style="display: none">
+      <td> 
+     </form> 
+      </td> 
+     </tr> 
+   </table>
+  </TD>
+ </TR>
+   </TABLE>
+   </div>
+   </TR>
+   </TD>
+   </TABLE>
+   <div id="sc-id-fixedheaders-placeholder" style="display: none; position: fixed; top: 0"></div>
+   </body>
+   <script type="text/javascript">
+   NM_ancor_ult_lig = '';
+   function NM_liga_tbody(tbody, Obj, Apl)
+   {
+      Nivel = parseInt (Obj[tbody].substr(3));
+      for (ind = tbody + 1; ind < Obj.length; ind++)
+      {
+           Nv = parseInt (Obj[ind].substr(3));
+           Tp = Obj[ind].substr(0, 3);
+           if (Nivel == Nv && Tp == 'top')
+           {
+               break;
+           }
+           if (((Nivel + 1) == Nv && Tp == 'top') || (Nivel == Nv && Tp == 'bot'))
+           {
+               document.getElementById('tbody_' + Apl + '_' + ind + '_' + Tp).style.display='';
+           } 
+      }
+   }
+   function NM_apaga_tbody(tbody, Obj, Apl)
+   {
+      Nivel = Obj[tbody].substr(3);
+      for (ind = tbody + 1; ind < Obj.length; ind++)
+      {
+           Nv = Obj[ind].substr(3);
+           Tp = Obj[ind].substr(0, 3);
+           if ((Nivel == Nv && Tp == 'top') || Nv < Nivel)
+           {
+               break;
+           }
+           if ((Nivel != Nv) || (Nivel == Nv && Tp == 'bot'))
+           {
+               document.getElementById('tbody_' + Apl + '_' + ind + '_' + Tp).style.display='none';
+               if (Tp == 'top')
+               {
+                   document.getElementById('b_open_' + Apl + '_' + ind).style.display='';
+                   document.getElementById('b_close_' + Apl + '_' + ind).style.display='none';
+               } 
+           } 
+      }
+   }
+   NM_obj_ant = '';
+   function NM_apaga_div_lig(obj_nome)
+   {
+      if (NM_obj_ant != '')
+      {
+          NM_obj_ant.style.display='none';
+      }
+      obj = document.getElementById(obj_nome);
+      NM_obj_ant = obj;
+      ind_time = setTimeout("obj.style.display='none'", 300);
+      return ind_time;
+   }
+  $(window).scroll(function() {
+   if (typeof(scSetFixedHeaders) === typeof(function(){})) scSetFixedHeaders();
+  }).resize(function() {
+   if (typeof(scSetFixedHeaders) === typeof(function(){})) scSetFixedHeaders();
+  });
+   nm_gp_fim = "";
+   </script>
+   </HTML>

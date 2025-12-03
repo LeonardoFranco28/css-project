@@ -1,0 +1,10 @@
+fastapi[standard]
+uvicorn
+pymongo
+selenium
+polars
+pandas
+webdriver_manager
+beautifulsoup4
+requests
+firecrawl
